@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Navbar styles moved to common.css */
+
+/* MAIN CONTENT */
+.main-content {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  flex: 1;
+}
+
+/* Make page full-height and push footer to bottom using flex layout */
+html, body {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.about-text {
+  margin-bottom: 2.5rem;
+}
+
+/* PHOTO SECTION */
+.photo-section {
+  display: flex;
+  flex-direction: column; /* empile l'image et la légende */
+  align-items: center;    /* centre horizontalement */
+}
+
+#photo-team {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.15);
+  object-fit: cover;
+}
+
+figcaption {
+  margin-top: 0.5rem;     /* espace entre l'image et la légende */
+  font-style: italic;
+  color: #1f2937;         /* corrige ton text-shadow qui n’était pas valide */
+  text-align: center;     /* centre le texte sous l'image */
+}
+
+
+/* Footer styles moved to common.css */
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .photo-team {
+    max-width: 90%;
+  }
+}

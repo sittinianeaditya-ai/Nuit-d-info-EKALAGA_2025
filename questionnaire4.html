@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Assets/img/favicon.ico">
+    <title>Questionnaire | Nerdy</title>
+    <link href="Assets/css/common.css" rel="stylesheet">
+    <link href="Assets/css/style.css" rel="stylesheet">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body data-question-id="q4">
+
+    <header>
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="selection_chapitre.html">Storyline</a>
+            <a href="apropos.html">À propos</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section title="Choix A">
+            <p class="histoire_p">Choix A : Il est trop vieux, il ne peut plus fonctionner correctement</p>
+        </section>
+
+        <section title="Choix B">
+            <p class="histoire_p">Choix B : Un PC vieux de 12 ans peut
+                encore être utilisé avec un
+                système léger comme Linux Lite ou Antix.</p>
+        </section>
+
+        <section title="image">
+            <img id="image-nirdy" src="Assets/img/nirdy/questionnaire.png" alt="Nirdy se questionne">
+        </section>
+
+        <section title="Choix">
+            <button class="button-choix" data-correct="false">
+                Choix A
+            </button>
+
+            <button class="button-choix" data-correct="true">
+                Choix B
+            </button>
+
+            <div class="btnContinuer">
+                <a href="histoire5.html">Continuer</a>
+            </div>
+        </section>
+
+        <section id="explication" class="hidden" title="explication">
+            <p>
+                <strong>Pourquoi :</strong> En effet, même un PC vieux de 12 ans peut être réutilisé avec des systèmes
+                d'exploitation légers, comme Linux Lite ou Antix, qui consomment très peu de ressources (RAM et CPU),
+                permettant au matériel ancien de fonctionner de manière plus fluide.
+            </p>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>Projet réalisé dans le cadre de la Nuit de l’Info 2025 – Équipe E-Kalaga.</p>
+            <p class="footer-meta">© 2025 – Ce site respecte autant que possible les bonnes pratiques de sobriété
+                numérique et d’accessibilité.</p>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

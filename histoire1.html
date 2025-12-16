@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Assets/img/favicon.ico">
+    <title>Storyline | Nerdy</title>
+    <link href="Assets/css/common.css" rel="stylesheet">
+    <link href="Assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+  <nav class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="selection_chapitre.html">Storyline</a>
+    <a href="apropos.html">À propos</a>
+  </nav>
+
+</header>
+
+<hr>
+
+<main>
+    
+    <div>
+        <p class="histoire_p">
+            Salut moi c'est Nirdy !
+            Je suis technicien mais surout
+            heureux de t'accompagner pendant la découverte de cet 
+            établiseement malheureusement malade. Et oui ! il est infesté
+            de PC lent ce qui dérègle nos dépenses et nous rend dépendants des horribles GAFAM !
+            Nous devons transformer le statut de cet établissement étant obsolète & dépendant en sublime
+            établissement NIRD !
+        </p>
+    </div>
+
+    <div>
+        <p class="histoire_p">
+            Nous sommes arrivés dans la première salle de l'établissement ! 
+            Ces 20 ordinateurs fonctionnent bien,
+            mais Windows 11 dit qu'ils sont trop vieux
+            car ils n'ont pas de puce TPM. On fait quoi ?
+        </p>
+    </div>
+
+    <div id="image">
+        <img src="Assets/img/nirdy/histoire.png" alt="Nirdy se pose la question"> </img>
+    </div>
+
+    <div class="btnContinuer">
+            <a href="questionnaire1.html">Continuer</a>
+    </div>
+
+</main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-column">
+                <h3>NIRD Kit de démarrage</h3>
+                <p>Outil libre pour aider les établissements scolaires à engager une démarche numérique plus responsable et durable.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Ressources utiles</h4>
+                <a href="https://nird.forge.apps.education.fr" target="_blank" rel="noopener">Site officiel NIRD</a><br>
+                <a href="#linux-doc">Distributions Linux recommandées</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Communauté</h4>
+                <a href="https://forge.apps.education.fr" target="_blank" rel="noopener">Forge des communs numériques éducatifs</a><br>
+                <a href="mailto:blossomtweats@gmail.com">Contacter l'équipe projet</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Projet réalisé dans le cadre de la Nuit de l'Info 2025 – Équipe E-Kalaga.</p>
+            <p class="footer-meta">© 2025 – Ce site respecte autant que possible les bonnes pratiques de sobriété numérique et d'accessibilité.</p>
+        </div>
+    </footer>
+
+<script>
+    const secretCode = "retro";
+    let pressedKeys = [];
+
+    window.addEventListener('keyup', (e) => {
+        pressedKeys.push(e.key);
+        pressedKeys.splice(-secretCode.length - 1, pressedKeys.length - secretCode.length);
+        if (pressedKeys.join('').includes(secretCode)) {
+            if (!document.getElementById('retro-style')) {
+                const link = document.createElement('link');
+                link.id = 'retro-style';
+                link.rel = 'stylesheet';
+                link.href = 'Assets/css/retro.css';
+                document.head.appendChild(link);
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

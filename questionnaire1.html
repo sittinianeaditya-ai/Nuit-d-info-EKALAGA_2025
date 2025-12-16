@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Assets/img/favicon.ico">
+    <title>Questionnaire | Nerdy</title>
+    <link href="Assets/css/common.css" rel="stylesheet">
+    <link href="Assets/css/style.css" rel="stylesheet">
+    <style>
+        .hidden { display: none; }
+    </style>
+</head>
+
+<body data-question-id="q1">
+
+<header>
+  <nav class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="selection_chapitre.html">Storyline</a>
+    <a href="apropos.html">À propos</a>
+  </nav>
+</header>
+
+<hr>
+
+<main>
+    
+    <section>
+        <p class="histoire_p">Choix A : On jette tout et on rachète du neuf.</p>
+        <p class="histoire_p">Choix B : On installe un système d'exploitation léger Basé sur linux.</p>
+    </section>
+
+    <section>
+        <img id="image-nirdy" src="Assets/img/nirdy/questionnaire.png" alt="Nirdy se questionne">
+    </section>
+
+    <section>
+        <button class="button-choix" data-correct="false">
+            Choix A
+        </button>
+
+        <button class="button-choix" data-correct="true">
+            Choix B
+        </button>
+        <div class="btnContinuer">
+            <a href="histoire2.html">Continuer</a>
+        </div>
+    </section>
+
+    <section id="explication" class="hidden">
+        <p>
+            Info Bulle : Le matériel est encore bon, c'est le logiciel qui est limitant. 
+            Passer sous Linux prolonge la durée de vie du matériel.
+        </p>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-top">
+        <div class="footer-column">
+            <h3>NIRD Kit de démarrage</h3>
+            <p>Outil libre pour aider les établissements scolaires à engager une démarche numérique plus responsable et durable.</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Ressources utiles</h4>
+            <a href="https://nird.forge.apps.education.fr" target="_blank" rel="noopener">Site officiel NIRD</a><br>
+            <a href="#linux-doc">Distributions Linux recommandées</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Communauté</h4>
+            <a href="https://forge.apps.education.fr" target="_blank" rel="noopener">Forge des communs numériques éducatifs</a><br>
+            <a href="mailto:blossomtweats@gmail.com">Contacter l'équipe projet</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Projet réalisé dans le cadre de la Nuit de l'Info 2025 – Équipe E-Kalaga.</p>
+        <p class="footer-meta">© 2025 – Ce site respecte autant que possible les bonnes pratiques de sobriété numérique et d'accessibilité.</p>
+    </div>
+</footer>
+
+<script src="script/script.js"></script>
+
+</body>
+</html>

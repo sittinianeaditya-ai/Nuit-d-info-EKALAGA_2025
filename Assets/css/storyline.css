@@ -1,0 +1,137 @@
+h1 {
+    text-align: center
+}
+
+/* Make page full-height and push footer to bottom using flex layout */
+html, body {
+    height: 100%;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Main content styling for better text presentation */
+main.main-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* Navbar styles moved to common.css */
+
+/*Bloc des chapitres*/
+.block {
+    margin: 1rem auto;
+    max-width: 320px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+}
+
+.title {
+    font-weight: 600;
+    color: rgb(31 41 55);
+}
+
+.description {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgb(75 85 99);
+}
+
+.description a {
+    --tw-text-opacity: 1;
+    color: rgb(59 130 246);
+}
+
+.description a:hover {
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    flex-shrink: 0;
+}
+
+.accept {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    background-color: #7e68c8;;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    border: none;
+    transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.accept a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.accept:hover {
+    background-color: #5c4c91;;
+}
+
+.accept:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+/* Footer styles moved to common.css */
+
+/* ---------- RESPONSIVE PART ---------- */
+@media (max-width: 768px) {
+    .nav {
+        padding: 0.6rem 1rem;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        margin-top: 0.4rem;
+        padding: 0.75rem 1rem;
+
+        display: none;
+        /* hidden by default */
+        flex-direction: column;
+        gap: 0.75rem;
+
+        background: #f8fafc;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    /* class to show menu when JS toggles it */
+    .nav-links.is-open {
+        display: flex;
+    }
+}
+
