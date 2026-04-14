@@ -4,18 +4,18 @@
 
 Our **E-kalaga** team is composed of 12 first-year Computer Science students at the IUT of Paris – Rives de Seine.
 
-- Amina E.
-- Tiago J.
-- Yasmine M.
-- Kenza M.
-- Aditya S.
-- Ahmed M.
-- Leonor Z.
+- [@aminaelhouari](https://github.com/aminaelhouari)
+- [@la-tiags](https://github.com/la-tiags)
+- [@eth3ral0](https://github.com/eth3ral0)
+- [@Kenza-Mkd](https://github.com/Kenza-Mkd)
+- [@sittinianeaditya-ai](https://github.com/sittinianeaditya-ai)
+- [@ahmed-muhammad7](https://github.com/ahmed-muhammad7)
+- [@leonorze](https://github.com/leonorze)
 - Hadja D.
 - Yassa A.
 - Yanis T.
-- Amine O.
-- Edan P.
+- [@O-Amine](https://github.com/O-Amine)
+- [@EdanPL](https://github.com/EdanPL)
 
 As part of **Night of Information 2025**, we developed a fun web platform to raise awareness among schools about **Inclusive, Responsible, and Sustainable (NIRD)** digital technology.
 
